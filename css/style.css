@@ -522,7 +522,7 @@ main.container {
 }
 
 .thumbnail {
-  width: 80px;
+  width: 200px;
   aspect-ratio: 1;
   object-fit: cover;
   border-radius: 4px;
