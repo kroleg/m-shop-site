@@ -510,7 +510,7 @@ main.container {
   margin: 2rem 0;
 }
 
-.main-image-full {
+.product-gallery-layout {
   margin-bottom: 1rem;
 }
 
@@ -522,6 +522,29 @@ main.container {
 .thumbnail-list {
   display: flex;
   gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+@media (min-width: 769px) {
+  .product-gallery-layout {
+    display: flex;
+    gap: 0.75rem;
+  }
+
+  .main-image-full {
+    flex: 1;
+    min-width: 0;
+  }
+
+  .thumbnail-list {
+    flex-direction: column;
+    margin-top: 0;
+    overflow-y: auto;
+  }
+
+  .thumbnail-list .thumbnail {
+    width: 120px;
+  }
 }
 
 .thumbnail {
